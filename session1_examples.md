@@ -200,7 +200,7 @@ dexec rivet --analysis=CMS_2019_I1753680 DY.hepmc
 ```
 Here, the `--analysis` option specifies which analysis to apply to the event sample. Running this command will create a `Rivet.yoda` file, which contains the histograms of the observables defined in the specified analysis.
 
-Note that generating only 100 events will not be sufficient to construct a reliable differential distribution, as the statistical uncertainty in each bin is proportional to $1/\sqrt{N}$, where $N$ is the number of entries in that bin. To obtain meaningful results, Example 2 should be modified to generate a larger event sample. To save time, you can download a pre-generated sample with 100k events from [here](http://cteqschool.lan).
+Note that generating only 100 events will not be sufficient to construct a reliable differential distribution, as the statistical uncertainty in each bin is proportional to $1/\sqrt{N}$, where $N$ is the number of entries in that bin. To obtain meaningful results, Example 2 should be modified to generate a larger event sample.
 
 The results stored in the `.yoda` file can be plotted using the following command:
 ```bash

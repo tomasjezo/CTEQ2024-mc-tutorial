@@ -304,7 +304,7 @@ The next step is to generate events. Launch the interactive `mg5_aMC` terminal a
 # Launch the calculation
 launch l+l- 
 ```
-Here, `l+l-` is the name of the process directory created in Example 7.
+Here, `l+l-` is the name of the process directory created in Example 6.
 
 The program will ask if you want to postprocess the events in any way (e.g., shower them, run detector simulation, decay resonances). At this point, refuse all these options by simply pressing Enter, as we will manually shower the events with `Pythia8` afterwards.
 
@@ -392,7 +392,7 @@ Once we analysed the event samples with `Rivet3` we can compare the two predicit
 # Plot two yoda files
 dexec rivet-mkhtml DY-MG5.yoda:"Title=MG5+Pythia8" DY.yoda:"Title=Pythia8" -c plot.conf
 ```
-Here `DY-MG5.yoda` and `DY.yoda` contain the results obtained by analysing `MG5_aMC@NLO+Pythia8` with the `rivet` program (see Example 5).
+Here `DY-MG5.yoda` and `DY.yoda` contain the results obtained by analysing `MG5_aMC@NLO+Pythia8` with the `rivet` program (see Example 4).
 
 ![Alt text](pics/rivetScreenshot2.png)
 

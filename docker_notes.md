@@ -3,7 +3,7 @@
 Here we describe our recommended way of using docker.
 
 ## First example
-- Pull container 
+- Pull image 
    ```bash
    docker pull hello-world
    ```
@@ -16,9 +16,9 @@ Here we describe our recommended way of using docker.
    REPOSITORY                        TAG       IMAGE ID       CREATED         SIZE
    hello-world                       latest    ee301c921b8a   15 months ago   9.14kB
    ```
-- Run it
+- Run it (turn it into a container with a name, see `--name` switch)  
   ```bash
-  docker run hello-world --name hello-world
+  docker run --name hello-world hello-world
   ```
   This will show the hello world message from Docker.
   ```
@@ -47,7 +47,7 @@ Here we describe our recommended way of using docker.
    ```bash
    docker ps
    ```
-- But it ran and exited. To list also stopped containers, we add `-a` switch
+- But our hellow world container ran and exited. To list also stopped containers, we add `-a` switch
    ```bash
    docker ps -a
    ```

@@ -2,6 +2,66 @@
 
 Here we describe our recommended way of using docker.
 
+## First example
+- pull container 
+   ```bash
+   docker pull hello-world
+   ```
+- check it's there
+   ```bash
+   docker images
+   ```
+   should show
+   ```
+   REPOSITORY                        TAG       IMAGE ID       CREATED         SIZE
+   hello-world                       latest    ee301c921b8a   15 months ago   9.14kB
+   ```
+- run it
+  ```bash
+  docker run hello-world
+  ```
+  This will show the hello world message from Docker.
+  ```
+   Hello from Docker!
+   This message shows that your installation appears to be working correctly.
+
+   To generate this message, Docker took the following steps:
+    1. The Docker client contacted the Docker daemon.
+    2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+       (arm64v8)
+    3. The Docker daemon created a new container from that image which runs the
+       executable that produces the output you are currently reading.
+    4. The Docker daemon streamed that output to the Docker client, which sent it
+       to your terminal.
+
+   To try something more ambitious, you can run an Ubuntu container with:
+   $ docker run -it ubuntu bash
+
+   Share images, automate workflows, and more with a free Docker ID:
+    https://hub.docker.com/
+
+   For more examples and ideas, visit:
+    https://docs.docker.com/get-started/
+   ```
+- listing all running docker containers can be done with
+   ```bash
+   docker ps
+   ```
+- but the container ran and exited
+   ```bash
+   docker ps
+   ```
+- to list also stopped containers, we add `-a` switch
+   ```bash
+   docker ps -a
+   ```
+- to start and stop the container we can do
+   ```bash
+   # start a container
+   docker start hello-world
+   # stop a container
+   docker stop hello-world
+
 ## Setting up
 
 1. We first pull the `mc-tutorial` image

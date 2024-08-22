@@ -3,20 +3,20 @@
 Here we describe our recommended way of using docker.
 
 ## First example
-- pull container 
+- Pull container 
    ```bash
    docker pull hello-world
    ```
-- check it's there
+- Check it's there
    ```bash
    docker images
    ```
-   should show
+   This should print
    ```
    REPOSITORY                        TAG       IMAGE ID       CREATED         SIZE
    hello-world                       latest    ee301c921b8a   15 months ago   9.14kB
    ```
-- run it
+- Run it
   ```bash
   docker run hello-world
   ```
@@ -43,25 +43,26 @@ Here we describe our recommended way of using docker.
    For more examples and ideas, visit:
     https://docs.docker.com/get-started/
    ```
-- listing all running docker containers can be done with
+- Listing all running docker containers can be done with
    ```bash
    docker ps
    ```
-- but the container ran and exited
+- But the container ran and exited
    ```bash
    docker ps
    ```
-- to list also stopped containers, we add `-a` switch
+- To list also stopped containers, we add `-a` switch
    ```bash
    docker ps -a
    ```
-- to start and stop the container we can do
+- To start and stop the container we can do
    ```bash
    # start a container
    docker start hello-world
    # stop a container
    docker stop hello-world
-
+   ```
+   
 ## Setting up
 
 1. We first pull the `mc-tutorial` image

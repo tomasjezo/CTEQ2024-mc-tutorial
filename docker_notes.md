@@ -59,7 +59,7 @@ Here we describe our recommended way of using docker.
    docker stop hello-world
    ```
    
-## Setting up
+## Setup for the MC tutorial
 
 1. We first pull the `mc-tutorial` image
    - from the docker hub

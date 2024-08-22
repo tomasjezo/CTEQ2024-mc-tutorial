@@ -47,11 +47,7 @@ Here we describe our recommended way of using docker.
    ```bash
    docker ps
    ```
-- But the container ran and exited
-   ```bash
-   docker ps
-   ```
-- To list also stopped containers, we add `-a` switch
+- But it ran and exited. To list also stopped containers, we add `-a` switch
    ```bash
    docker ps -a
    ```

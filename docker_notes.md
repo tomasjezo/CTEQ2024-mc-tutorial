@@ -18,7 +18,7 @@ Here we describe our recommended way of using docker.
    ```
 - Run it
   ```bash
-  docker run hello-world
+  docker run hello-world --name hello-world
   ```
   This will show the hello world message from Docker.
   ```

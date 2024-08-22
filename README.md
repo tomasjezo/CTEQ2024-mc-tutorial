@@ -14,4 +14,4 @@ The content of Session 2 will be linked here.
 
 ## Appendix 
 
-[Notes on docker](docker-notes.md)
+[Notes on docker](docker_notes.md)

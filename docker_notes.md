@@ -73,7 +73,7 @@ Here we describe our recommended way of using docker.
 
 2. Then we enter the directory we want to work in and create a container from the image
    ```
-   docker run -it -d -v ./:/home -w /home --name mc-tutorial mc-tutorial
+   docker run -it -d -v ./:/home -w /home --name mc-tutorial tomasjezo/mc-tutorial
    ``` 
    The `-it` flag runs the container with a terminal attached to it, `-d` in detached state.
    The `-v` flag mounts the current working directory under the `/home` path in the container and the `-w` flag changes the working directory to `/home`. `--name` makes the container available under the name `mc-tutorial`.

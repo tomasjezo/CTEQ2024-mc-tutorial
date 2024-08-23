@@ -434,8 +434,8 @@ The names of the weights `1,6,...` can be dug out of the `.lhe` file:
 ```
 
 This is what the plot looks like with a scale variation band:
-![A screenshot of a single Rivet plot with scale variation band](pics/rivetScreenshot3.png)
 
+<img alt="A screenshot of a single Rivet plot with scale variation band" src="pics/rivetScreenshot3.png" width="400">
 
 ## Appendix
 

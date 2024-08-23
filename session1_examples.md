@@ -403,7 +403,7 @@ Like this, we disable all but the first weight:
 # This is bash
 
 # Plot two yoda files, select single weight
-dexec rivet-mkhtml --errs results/DY-MG5.yoda:"Title=MG5+Pythia8:Variations=none"  results/DY.yoda:"Title=Pythia8" -c plot.conf
+dexec rivet-mkhtml --errs DY-MG5.yoda:"Title=MG5+Pythia8:Variations=none"  DY.yoda:"Title=Pythia8" -c plot.conf
 
 ```
 
@@ -412,7 +412,7 @@ And like this, we instruct `Rivet` to render an envelope of a selection of weigh
 # This is bash
 
 # Plot two yoda files, with a central curve and a scale variation band
-dexec rivet-mkhtml --errs results/DY-MG5.yoda:"Title=MG5+Pythia8:Variations=none:BandComponentEnv=1,6,11,16,25,30,35,40"  results/DY.yoda:"Title=Pythia8" -c plot.conf
+dexec rivet-mkhtml --errs DY-MG5.yoda:"Title=MG5+Pythia8:Variations=none:BandComponentEnv=1,6,11,16,25,30,35,40"  DY.yoda:"Title=Pythia8" -c plot.conf
 ```
 
 Which weights to select (`1,6,...`) can be figured out by looking at the `.lhe` file:

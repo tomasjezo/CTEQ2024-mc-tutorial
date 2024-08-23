@@ -605,4 +605,10 @@ Here we assume that the directory you work in is the same as the working directo
    ```
    by 
    ```
-
+   main131 main132 main133 main134 main135 mysource: $(PYTHIA) $$@.cc
+   ```
+   and run
+   ```
+   docker exec mc-tutorial make mysource
+   ```
+   c. If you also need other libraries, modify one of the other targets in the `Makefile`.

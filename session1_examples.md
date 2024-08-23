@@ -417,6 +417,7 @@ dexec rivet-mkhtml --errs results/DY-MG5.yoda:"Title=MG5+Pythia8:Variations=none
 
 The names of the weights `1,6,...` can be dug out of the `.lhe` file:
 ```
+...
 <initrwgt>
 <weightgroup name="Central scale variation" combine="envelope">
 <weight id="1" MUR="0.5"  MUF="0.5"  PDF="247000" > MUR=0.5 MUF=0.5  </weight>
@@ -431,6 +432,9 @@ The names of the weights `1,6,...` can be dug out of the `.lhe` file:
 <weight id="10" MUR="0.5"  MUF="1.0"  DYN_SCALE="4"  PDF="247000" > MUR=0.5 dyn_scale_choice=sqrts  </weight>
 ...
 ```
+
+This is what the plot looks like with a scale variation band:
+<img width="456" alt="image" src="https://github.com/user-attachments/assets/6dde80e9-8e20-48aa-b29f-8d748c32b198">
 
 ## Appendix
 
@@ -567,6 +571,37 @@ Each subsequent line describes a particle in the event. These entries include:
 - Momentum (px, py, pz, E, m): The particle's 4-momentum (momentum components in GeV, energy in GeV, and mass in GeV).
 - Spin Information: (optional) Spin/helicity information.
 
-### `POWHEG BOX`
+## Running Python with the `mc-tutorial` container 
 
-`POWHEG BOX` is a general-purpose computational framework used in high-energy physics to generate events with next-to-leading-order (NLO) accuracy. It is an implementation of the POWHEG (Positive Weight Hardest Emission Generator) method, which was developed to improve the accuracy of event simulations by combining NLO perturbative QCD calculations with parton shower simulations, while ensuring that all generated events have positive weights.
+- run `python` interpreter terminal
+   ```
+   docker exec -it mc-tutorial python
+   ```
+   type command and execute them there. The `-it` flag ensures the interactive mode is invoked, otherwise the command just exits.
+
+- save the code to a source file `<fname>.py` and run
+   ```
+   docker exec mc-tutorial python <fname>.py
+   ``` 
+   The `-it` flag is not necessary, but won't hurt. 
+
+## Compiling `Pythia8` programs with the `mc-tutorial` container 
+
+Here we assume that the directory you work in is the same as the working directory used during the creation of the container. Otherwise, make use of the `-w` flag to tell docker the current working directory.
+
+1. Get the `Makefile` from the container 
+   ```
+   docker exec mc-tutorial cat /usr/local/share/Pythia8/examples/Makefile > Makefile
+   docker exec mc-tutorial cat /usr/local/share/Pythia8/examples/Makefile.inc > Makefile.inc
+   ```
+2. a. If you want your progam to be linked against `libpythia8` then you can simply name your source file `mymainNN.cc` where NN is between 01 and 99 and run
+   ```
+   docker exec mc-tutorial make mymainNN
+   ```
+   b. If also need linking against `HepMC3` then name your source code as you wish, for example `mysource.cc`. Then you need to modify the `Makefile` by replacing the line 100 
+   ```
+   main131 main132 main133 main134 main135: $(PYTHIA) $$@.cc
+   ```
+   by 
+   ```
+

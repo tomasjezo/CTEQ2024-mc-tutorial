@@ -6,7 +6,7 @@ The purpose of this session is to introduce essential tools for making predictio
 
 The learning materials can be found in [Session 1 Examples](session1_examples.md). This document contains basic instructions along with several examples. We will go through the material together; the examples will be discussed first and then demonstrated. You're expected to try the examples right away, but don't worry if you fall behind. We've allocated plenty of time for everyone to work through the exercises in tomorrow's session.
 
-Your experience may vary significantly, and for those of you with extensive experience, we’ve also prepared a simple assignment that will be linked here. You can work on it independently.
+Your experience may vary significantly, and for those of you with extensive experience, we’ve also prepared a simple [assignment](session1_assignment.md). You can work on it independently.
 
 ## Session 2 - Sunday
 

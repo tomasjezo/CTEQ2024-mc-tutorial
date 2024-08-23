@@ -186,8 +186,6 @@ A list of all available analyses can be found on the [`Rivet` website](https://r
 - `CMS_2019_I1753680`: measurements of the differential cross sections for $Z$ bosons produced in proton-proton collisions at $\sqrt{s}=13$ TeV, decaying to muons and electrons. The data analysed were collected in 2016 with the CMS detector at the LHC and correspond to an integrated luminosity of 35.9/fb. It provides differential cross sections for the dilepton pair, most notably the transverse momentum ($p_t$) and the rapidity ($y$).
 - `CMS_2016_I1413748`: measurements of the top quark-antiquark spin correlation and the top quark polarization for top pairs produced in proton-proton collisions at $\sqrt{s}=8$ TeV. The data correspond to an integrated luminosity of 19.5/fb
 collected with the CMS detector at the LHC. The measurements are performed using events with two oppositely charged leptons (electrons or muons) and two or more jets, where at least one of the jets is identified as originating from a bottom quark. The spin correlations and polarization are extracted from the angular distributions of the two selected leptons, both inclusively and differentially, with respect to the invariant mass, rapidity, and transverse momentum of the $t\bar{t}$ system.
-- `ATLAS_2019_I1759875`: ttbar 13TeV 
-- `CMS_2018_I1703993`: ttbar 13TeV
 
 ---
 ### Example 4: Analysing $l^+l^-$ event sample with `Rivet`

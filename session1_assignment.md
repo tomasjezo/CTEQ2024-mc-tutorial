@@ -1,6 +1,6 @@
 ## Independent work: Off-shell effects in top pair production
 
-The examples above should provide you with sufficient knowledge to now undertake an independent project. The topic of this project top quark production at the LHC. The dominant mode of production is the QCD-induced production of top-antitop pairs. Top quarks, being unstable, decay into $b$ quarks and $W$ bosons, which further decay either leptonically (lepton + neutrino) or hadronically (a pair of quarks). 
+The examples from [Session 1](session1_examples.md) provide you with sufficient knowledge to now undertake an independent project. The topic of this project top quark production at the LHC. The dominant mode of production is the QCD-induced production of top-antitop pairs. Top quarks, being unstable, decay into $b$ quarks and $W$ bosons, which further decay either leptonically (lepton + neutrino) or hadronically (a pair of quarks). 
 
 Given that the top quark is a relatively narrow resonance, it is often sufficient to perform simulations with stable top quarks or with approximate decay treatments. However, as LHC measurements are reaching very high precision, there are cases where it becomes or soon become necessary to include exact off-shell effects. Examples include measurements of the top quark mass based on the kinematic distributions of top decay products, or more recently, the measurement of quantum entanglement in top-antitop pairs.
 

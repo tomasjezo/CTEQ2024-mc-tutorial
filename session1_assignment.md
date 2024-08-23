@@ -1,12 +1,12 @@
 ## Independent work: Off-shell effects in top pair production
 
-The examples from [Session 1](session1_examples.md) provide you with sufficient knowledge to now undertake an independent project. The topic of this project top quark production at the LHC. The dominant mode of production is the QCD-induced production of top-antitop pairs. Top quarks, being unstable, decay into $b$ quarks and $W$ bosons, which further decay either leptonically (lepton + neutrino) or hadronically (a pair of quarks). 
+The examples from [Session 1](session1_examples.md) provide you with sufficient knowledge to now undertake an independent project. The topic is top quark production at the LHC. The dominant mode of production is the QCD-induced production of top-antitop pairs. Top quarks, being unstable, decay into $b$ quarks and $W$ bosons, which further decay either leptonically (lepton + neutrino) or hadronically (a pair of quarks). 
 
 Given that the top quark is a relatively narrow resonance, it is often sufficient to perform simulations with stable top quarks or with approximate decay treatments. However, as LHC measurements are reaching very high precision, there are cases where it becomes or soon become necessary to include exact off-shell effects. Examples include measurements of the top quark mass based on the kinematic distributions of top decay products, or more recently, the measurement of quantum entanglement in top-antitop pairs.
 
 Accounting for off-shell effects exactly is equivalent to performing calculations with the top decay products in the final state, rather than the top quarks themselves. The simplest channel to study from a theoretical perspective is the dilepton channel, where both $W$ bosons decay leptonically: i.e., the process $p p \to l^+ \nu_l l^- \bar{\nu}_l b \bar{b}$, where $l \in {e, \mu}$. In this project, we will focus exclusively on this channel.
 
-The goal is to develop an intuition for the importance of off-shell effects in existing measurements. Specifically, we will examine the angular distribution of the two leptons and the transverse momentum of the $e^+ \mu^-$ system.
+The goal is to develop an intuition for the importance of off-shell effects in existing measurements. Specifically, we will examine the angular distribution of the two leptons (one originating from the top, the other from the anti-top).
 
 For that, you will compare predictions from a top-pair sample with approximate decay treatment to predictions from a sample in which the off-shell effects are exactly accounted for. Finally, you will also compare both predictions to experimental data to assess the significance of off-shell effects.
 

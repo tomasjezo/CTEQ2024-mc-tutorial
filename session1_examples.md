@@ -239,7 +239,7 @@ Here’s what you should see:
    RatioPlotYMax=2
    # END PLOT
    ```
-   More information is available in the [`makeplots.md`]](https://gitlab.com/hepcedar/rivet/-/blob/rivet-3.1.8/doc/tutorials/makeplots.md) file from the [`Rivet` tutorials directory](https://gitlab.com/hepcedar/rivet/-/blob/rivet-3.1.8/doc/tutorials).
+   More information is available in the [`makeplots.md`](https://gitlab.com/hepcedar/rivet/-/blob/rivet-3.1.8/doc/tutorials/makeplots.md) file from the [`Rivet` tutorials directory](https://gitlab.com/hepcedar/rivet/-/blob/rivet-3.1.8/doc/tutorials).
 
 3. __Using Matplotlib for Plotting__: `Rivet` also supports plotting with `matplotlib` in `Python` using the `rivet-mkhtml-mpl` command, see [here](https://gitlab.com/hepcedar/rivet/-/blob/f12ca0cdb2163f29f725d6cbb4cee3a59c766fcb/doc/tutorials/customizeplots.md).
 

@@ -434,7 +434,6 @@ The names of the weights `1,6,...` can be dug out of the `.lhe` file:
 ```
 
 This is what the plot looks like with a scale variation band:
-<img width="456" alt="image" src="https://github.com/user-attachments/assets/6dde80e9-8e20-48aa-b29f-8d748c32b198">
 
 ## Appendix
 

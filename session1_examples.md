@@ -223,7 +223,7 @@ Here’s what you should see:
    # Do the plots
    dexec rivet-mkhtml Rivet.yoda:"LineColor=blue:LineWidth=2:Label=Pythia8"
    ```
-   For more details, refer to the [`plotting.md`]](https://gitlab.com/hepcedar/rivet/-/blob/rivet-3.1.8/doc/tutorials/plotting.md) file from the [`Rivet` tutorials directory](https://gitlab.com/hepcedar/rivet/-/blob/rivet-3.1.8/doc/tutorials).
+   For more details, refer to the [`plotting.md`](https://gitlab.com/hepcedar/rivet/-/blob/rivet-3.1.8/doc/tutorials/plotting.md) file from the [`Rivet` tutorials directory](https://gitlab.com/hepcedar/rivet/-/blob/rivet-3.1.8/doc/tutorials).
 
 2. __Configuring Plotting Area Settings__: You can adjust plotting area settings (e.g., sizes, limits, axis labels) using a configuration file:
    ```bash

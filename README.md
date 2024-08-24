@@ -1,4 +1,4 @@
-# CTEQ2024 MC Tutorial, August 2024
+# CTEQ2024 Monte Carlo Tutorial, August 2024
 
 The purpose of this tutorial is to introduce essential tools for making predictions at the Large Hadron Collider (LHC). Through a series of simple examples, you will learn the basics of Monte Carlo (MC) event generators, including how to generate events, store them, and analyse the results using a standard analysis toolchain. 
 

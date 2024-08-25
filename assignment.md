@@ -75,7 +75,9 @@ To achieve this, you will need to write your own `Rivet3` analysis, which involv
    declare(FastJets(fs, FastJets::ANTIKT, R, JetFinder::Muons::DECAY), "jets"); 
    ```
    and applied as
-   ```
+   ```c++
+   // This is C++
+   
    const FastJets& jetproj_r = applyProjection<FastJets>(event, "jets");
    ```
 5. **B-flavoured jets** can be found by making use of the `containsParticleId(PID::BQUARK)` method.

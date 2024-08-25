@@ -60,5 +60,22 @@ Focus on an observable that is notably sensitive to both: the invariant mass of 
 
 To achieve this, you will need to write your own `Rivet3` analysis, which involves tagging $e^+$, constructing jets, tagging the hardest jet that contains a $b$ quark, and finally calculating the invariant mass of the system of the two tagged objects.
 
+### Notes
 
+1. **`POWHEG BOX/hvq`** executable is available in `PATH` as `pwhg_main-hvq`.
+   
+2. A **`powheg.input`** example for this process can be found in `/root/POWHEG-BOX-V2/hvq/testrun-tdec-lhc`.
+    
+3. Make sure you enable the correct top decay mode using the **`topdecaymode`** setting.
 
+4. **Tagging jets in `Rivet3`** can be done using the fastjet projection which is declared as
+   ```c++
+   // This is C++
+   
+   declare(FastJets(fs, FastJets::ANTIKT, R, JetFinder::Muons::DECAY), "jets"); 
+   ```
+   and applied as
+   ```
+   const FastJets& jetproj_r = applyProjection<FastJets>(event, "jets");
+   ```
+5. **B-flavoured jets** can be found by making use of the `containsParticleId(PID::BQUARK)` method.

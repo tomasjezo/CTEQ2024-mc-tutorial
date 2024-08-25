@@ -17,3 +17,9 @@ We introduce yet another hard event generator, `POWHEG BOX`, and discuss how eve
 ## Hands-on session 2 - Sunday, 25.08.2024
 
 This hands-on session will be reserved for independent work. Feel free to go back to examples from [Friday](session1_examples.md) or [earlier today](session2_examples.md). For those who want to reinforce what they have learned, we’ve also prepared an extra [assignment](assignment.md).
+
+## Docker image build files
+
+The container build files can be found here:
+- [mc-tutorial](mc-tutorial.Docker)
+- [mc-tutorial-powheg](mc-tutorial-powheg.Docker)

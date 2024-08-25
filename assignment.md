@@ -46,3 +46,19 @@ Let us focus on the distributions of the $\cos \phi$ angle of the two leptons.
 We note that the `Pythia8` prediction is flat, so each angle is equaly likely. It seems like the spin-correlations are not taken into account and this is at odds with the data. In `MG5_aMC@NLO` the spin-correlations are taken into account by construction by considering the final state with top quark decay products.`MG5_aMC@NLO` describes the data well already at leading order accuracy. 
 
 ## Part 2
+
+We will promote our predictions to NLO QCD accuracy. For this, we will use the `POWHEG-BOX/hvq` program, which implements $t\bar{t}$ production at NLO QCD accuracy with approximate top decays à la `MadSpin`. This approximation includes spin correlations at NLO but omits contributions from topologies with fewer than two top quarks. The same result can also be achieved with `MG5_aMC@NLO` interfaced with `MadSpin`, which is available out-of-the-box. A fully off-shell calculation is available in the `POWHEG-BOX-RES/b_bbar_4l` program; however, the computational cost is two orders of magnitude larger compared to a calculation using the approximate top decay treatment.
+
+### Objective
+
+Investigate the impact of:
+
+1. **Off-shell effects:** in the LO sample provided by the MG5 from Part 1.
+2. **Higher-order effects:** in the sample that you will generate with `POWHEG-BOX/hvq`.
+
+Focus on an observable that is notably sensitive to both: the invariant mass of the $b$-jet–-lepton system, by comparing the predictions from `Pythia8`, `MG5_aMC@NLO+Pythia8`, and `POWHEG-BOX/hvq+Pythia8`. 
+
+To achieve this, you will need to write your own `Rivet3` analysis, which involves tagging $e^+$, constructing jets, tagging the hardest jet that contains a $b$ quark, and finally calculating the invariant mass of the system of the two tagged objects.
+
+
+

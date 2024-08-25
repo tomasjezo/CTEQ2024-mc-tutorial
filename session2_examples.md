@@ -23,6 +23,7 @@ or here
 # Pull the mc-tutorial-powheg directory
 docker pull cteqschool.lan:5000/mc-tutorial-powheg
 ```
+The examples in this session will rely on both the `mc-tutorial` as well as the `mc-tutorial-powheg` images. I strongly recommend to make sure both containers mount the same directory on the host system.
 
 `POWHEG BOX V2` is installed in `/root/POWHEG-BOX-V2/` directory.
 

@@ -1,4 +1,4 @@
-## Independent work: Top quark production and decay at the LHC
+# Independent work: Top quark production and decay at the LHC
 
 The examples from [Session 1](session1_examples.md) provide you with sufficient knowledge to now undertake an independent project. The topic is the top quark production and decay at the LHC. The dominant mode of production is the QCD-induced production of top-antitop pairs. Top quarks, being unstable, decay into $b$ quarks and $W$ bosons, which further decay either leptonically (lepton + neutrino) or hadronically (a pair of quarks). 
 
@@ -8,14 +8,15 @@ Accounting for off-shell effects exactly is equivalent to performing calculation
 
 The goal is to develop an intuition for the importance of off-shell effects in existing measurements. Specifically, we will examine the angular distribution of the two leptons (one originating from the top, the other from the anti-top).
 
-For that, you will compare predictions from a top-pair sample with approximate decay treatment to predictions from a sample in which the off-shell effects are exactly accounted for. Finally, you will also compare both predictions to experimental data to assess the significance of off-shell effects.
+## Part 1
+
+You will compare predictions from a top-pair sample with approximate decay treatment to predictions from a sample in which the off-shell effects are exactly accounted for. Finally, you will also compare both predictions to experimental data to assess the significance of off-shell effects.
 
 ### Objective
 Compare predictions from two different samples to each other and to data 
 1. **Pythia8 Sample:** This sample will be generated using `Pythia8`, which includes parton showers, multiple parton interactions (MPI), hadronization, etc., but the top quark decay is treated only approximatively.
 2. **MG5_aMC@NLO + Pythia8 Sample:** This sample will be generated using `MG5_aMC@NLO` for the hard scattering process, followed by `Pythia8` for showers and other effects. This approach accounts for off-shell effects exactly.
 3. Data included in the `Rivet` analysis `CMS_2016_I1413748` and in particular for the distribution of cosine angle between the two leptons ($\cos \phi$, `d05-x01-y01`).
-
 
 ### Checklist
 
@@ -36,7 +37,6 @@ Carefully consider the following points:
 5. **Compare Predictions:**
    Use `rivet-mkhtml` to plot the predictions from both event samples. Compare the results with each other and with experimental data.
 
-
 ### Expected results 
 
 Let us focus on the distributions of the $\cos \phi$ angle of the two leptons.
@@ -44,3 +44,5 @@ Let us focus on the distributions of the $\cos \phi$ angle of the two leptons.
 <img alt="A screenshot of a single Rivet plot of cos(phi) distribution" src="pics/result1.png" width="400">
 
 We note that the `Pythia8` prediction is flat, so each angle is equaly likely. It seems like the spin-correlations are not taken into account and this is at odds with the data. In `MG5_aMC@NLO` the spin-correlations are taken into account by construction by considering the final state with top quark decay products.`MG5_aMC@NLO` describes the data well already at leading order accuracy. 
+
+## Part 2

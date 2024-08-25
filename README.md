@@ -21,5 +21,5 @@ This hands-on session will be reserved for independent work. Feel free to go bac
 ## Docker image build files
 
 The container build files can be found here:
-- [mc-tutorial](mc-tutorial.Docker)
-- [mc-tutorial-powheg](mc-tutorial-powheg.Docker)
+- [mc-tutorial](mc-tutorial.Dockerfile)
+- [mc-tutorial-powheg](mc-tutorial-powheg.Dockerfile)
